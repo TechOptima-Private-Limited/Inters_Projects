@@ -5,11 +5,11 @@ from PIL import Image
 import requests
 import json
 
-# --- Constants ---
+
 OLLAMA_URL = "http://localhost:11434/api/generate"
 MODEL_NAME = "optgpt:7b"
 
-# ========== Query OptGPT with Data ==========
+
 def query_ollama_model_with_data(prompt, df):
     data_sample = df.head(5).to_dict(orient='records')
     column_info = "\n".join([f"- {col}: {df[col].dtype}" for col in df.columns])
@@ -48,7 +48,7 @@ Give your answer based only on the data shown above. If data is insufficient to 
         st.error(f"Error contacting Ollama: {e}")
         return None
 
-# ========== Load or Upload Datasets ==========
+
 @st.cache_data
 def load_default_data():
     left = pd.read_csv("employee_who_left.csv")
@@ -58,7 +58,7 @@ def load_default_data():
     data = pd.concat([left, existing], ignore_index=True)
     return data
 
-# ========== Main App ==========
+
 def main():
     st.set_page_config(page_title="DrLoE - Employee Attrition via OptGPT", layout="wide")
 
