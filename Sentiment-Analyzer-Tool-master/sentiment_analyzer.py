@@ -13,7 +13,7 @@ if st.button('Predict Sentiment'):
         with st.spinner('OptGPT Sentiment Analyzer is thinking...'):
             try:
                 response = requests.post(
-                    "http://192.168.1.210:5001/api/sentiment", 
+                    "http://192.168.1.228:5001/api/sentiment", 
                     json={"review": review},
                     timeout=60
                 )
