@@ -1,0 +1,10 @@
+scipy
+matplotlib
+streamlit
+imbalanced_learn
+seaborn
+pandas
+numpy
+imblearn
+scikit_learn
+pandas-bokeh
