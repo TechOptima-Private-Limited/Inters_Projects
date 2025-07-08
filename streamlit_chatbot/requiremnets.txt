@@ -3,5 +3,5 @@ streamlit
 requests
 python-dotenv
 guardrails-ai==0.6.6
-openai>=1.68.0,<2.0.0
+
  
