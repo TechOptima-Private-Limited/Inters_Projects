@@ -1,7 +1,0 @@
-# requirements.txt
-streamlit
-requests
-python-dotenv
-guardrails-ai==0.6.6
-
- 
