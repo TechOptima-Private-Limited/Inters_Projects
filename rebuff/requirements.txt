@@ -1,0 +1,5 @@
+rebuff
+openai==1.14.2
+langchain==0.1.14
+pinecone-client==3.0.2
+tiktoken
